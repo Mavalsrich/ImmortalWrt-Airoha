@@ -42,10 +42,10 @@ on:
           - 512M
           - 1G
           - 2G
-      extra_packages:kmod-usb-net kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-rndis usbutils
+      extra_packages:
         description: '附加软件包（空格分隔；包名前加 - 表示移除。可用选包页生成）'
-        required: false
-        default: ''
+        required: ture
+        default: 'kmod-usb-net kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-rndis usbutils'
         type: string
       pkg_versions:
         description: '⚗️ 实验性 · 指定软件包版本（如 sing-box=1.13.19，跨版本不保证编得过；留空用 config/pkg-versions.txt）'
