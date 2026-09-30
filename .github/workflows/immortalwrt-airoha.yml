@@ -42,7 +42,7 @@ on:
           - 512M
           - 1G
           - 2G
-      extra_packages:
+      extra_packages:kmod-usb-net kmod-usb-net-cdc-ncm kmod-usb-net-huawei-cdc-ncm kmod-usb-net-rndis usbutils
         description: '附加软件包（空格分隔；包名前加 - 表示移除。可用选包页生成）'
         required: false
         default: ''
